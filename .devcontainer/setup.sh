@@ -8,18 +8,11 @@ sudo apt-get install -y \
   curl \
   unzip \
   git \
-  libuv1-dev \
-  libgtk-3-dev \
-  libwebkit2gtk-4.1-dev
-
+  libuv1-dev
 
 echo "Installing Bluejs..."
-curl -fsSL https://bluejs.dev/install.sh | bash
-
-if ! grep -q 'HOME/.local/bin' "$HOME/.bashrc" 2>/dev/null; then
-  echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.bashrc"
-fi
-export PATH="$HOME/.local/bin:$PATH"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+sudo dpkg -i "${SCRIPT_DIR}/blue.deb"
 
 blue --version
 
@@ -28,3 +21,5 @@ echo "Codespace ready."
 echo "Try:"
 echo "  blue -compile examples/aot-math/main.js -o math && ./math"
 echo "  blue -build examples/http-server -o http-demo && ./http-demo"
+echo "  cd examples/react-init-hybrid && npm install && cd ../.."
+echo "  blue -build examples/react-init-hybrid -o react-demo && ./react-demo"
