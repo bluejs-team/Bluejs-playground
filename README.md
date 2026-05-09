@@ -2,9 +2,7 @@
 
 Try Bluejs in GitHub Codespaces without installing anything locally.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/YOUR_GITHUB_USERNAME/bluejs-playground)
-
-Replace `YOUR_GITHUB_USERNAME` with your GitHub username or organization.
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/bluejs-team/bluejs-playground)
 
 ## Quick Start
 
