@@ -3,12 +3,14 @@ set -euo pipefail
 
 sudo apt-get update
 sudo apt-get install -y \
-    build-essential \
-    pkg-config \
-    curl \
-    unzip \
-    git \
-    libuv1-dev
+  build-essential \
+  pkg-config \
+  curl \
+  unzip \
+  git \
+  libuv1-dev \
+  libgtk-3-dev \
+  libwebkit2gtk-4.1-dev
 
 
 echo "Installing Bluejs..."
