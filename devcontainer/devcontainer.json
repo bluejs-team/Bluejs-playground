@@ -1,0 +1,27 @@
+{
+  "name": "Bluejs Playground",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "forwardPorts": [38420, 48311],
+  "portsAttributes": {
+    "38420": {
+      "label": "React hybrid demo"
+    },
+    "48311": {
+      "label": "HTTP server demo"
+    }
+  }
+}
