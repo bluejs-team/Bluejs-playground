@@ -1,0 +1,12 @@
+{
+  "bundleDependencies": false,
+  "bundleHtml": [
+    "inline public/index.html for dev"
+  ],
+  "bundlePlatform": "node",
+  "controlPlane": false,
+  "entry": "src/core.js",
+  "hybrid": true,
+  "publicDir": "public",
+  "quickjsIsland": "src/island.js"
+}
